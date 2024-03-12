@@ -1,0 +1,115 @@
+/* GOOGLE FONTS  */
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button#button {
+  font-family: "Love Light", cursive;
+
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 2rem 4rem;
+
+  font-size: 3rem;
+  font-weight: 700;
+  box-shadow: 2rem 2rem 2rem black;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.none {
+  display: none;
+}
+
+#button:active {
+  transform: translateY(0.8rem);
+}
+
+div.container {
+  height: 20rem;
+  border: black 2px solid;
+
+  position: relative;
+}
+
+#button1,
+#button2 {
+  border: none;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+
+  bottom: 0.2rem;
+  position: absolute;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#button1 {
+  right: 6rem;
+}
+
+#button2 {
+  right: 1rem;
+}
+
+#heading {
+  text-align: center;
+}
+
+.none2 {
+  animation: increase infinite 4s alternate-reverse;
+}
+
+@keyframes increase {
+  from {
+    transform: scale(5);
+  }
+
+  to {
+    transform: scale(20);
+  }
+}
+
+/* QUERY SELECTOR  */
+@media screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .container {
+    width: 50%;
+  }
+}
